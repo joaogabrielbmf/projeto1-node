@@ -24,7 +24,7 @@ app.get("/cadastro/{:nome}", function(req,res){
     //req --> dados enviados pelo cliente
     var nome = req.params.nome;
     if (nome){
-        res.send("<h1>produto " + nome + " criado!</h1>");
+        res.send("<h1>produto " + nome + " criado com sucesso!</h1>");
     }else{
         res.send("produto criado!");
     }
